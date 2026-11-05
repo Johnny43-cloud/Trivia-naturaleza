@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Naturaleza 🧠</title>
-    <!-- Cargamos Brython directamente desde la web -->
+    <!-- Cargamos la versión estable y exacta de Brython -->
+    <script type="text/javascript" src="https://jsdelivr.net"></script>
     <script type="text/javascript" src="https://jsdelivr.net"></script>
 </head>
 <body onload="brython()" style="background-color: #121212; color: #ffffff; font-family: sans-serif; padding: 20px; text-align: center;">
@@ -14,12 +15,11 @@
     <p style="color: #888; font-size: 14px;">El juego se abrirá en ventanas flotantes en tu pantalla. ¡Suerte!</p>
     <hr style="border: 1px solid #333; width: 80%;">
 
-    <!-- Este bloque de código hace la magia para que tu Python corra en el celular -->
     <script type="text/python">
 import window
 import builtins
 
-#Conectamos tus input() y print() con las ventanas flotantes del teléfono
+# Enlazamos tus funciones nativas de consola a alertas de la web
 def web_input(prompt_text=""):
     return window.prompt(prompt_text)
 
@@ -30,7 +30,7 @@ def web_print(*args, **kwargs):
 builtins.input = web_input
 builtins.print = web_print
 
-#Ejecutamos tu archivo de Python sin tocarle nada
+# Ejecutamos tu archivo original de Python
 try:
     exec(open("Trivia-naturaleza.py", encoding="utf-8").read())
 except Exception as e:
