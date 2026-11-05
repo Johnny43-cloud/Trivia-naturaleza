@@ -4,7 +4,7 @@ vidas = 3
 def descontar_vidas():
     global vidas
     vidas -= 1
-    print(f"\nte quedan {vidas} vida.")
+    print(f"\nte quedan {vidas} vidas.")
     if vidas == 0:
         print("\n💀 =================================== 💀")
         print("💥 ¡GAME OVER! Has perdido tus 3 vidas. 💥")
