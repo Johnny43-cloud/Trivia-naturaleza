@@ -50,7 +50,7 @@ else :
   
 #--- Pregunta 2 ---
 print(f"\n¡Vamos con la segunda pregunta!") 
-respuesta_2 = input("¿cuál es el río mas largo del mundo?\n")                                                      
+respuesta_2 = input("¿cuál es el río más largo del mundo?\n")                                                      
 #Convertimos la respuesta a minúsculas para evitar errores
 if respuesta_2.lower() == "amazonas" :
     print(f"✔️ ¡Excelente! , ¡Sigue asi !")
