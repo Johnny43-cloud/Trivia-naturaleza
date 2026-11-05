@@ -60,7 +60,7 @@ else :
   
 #--- Pregunta 3 ---
 print(f"\n ¡Vamos con la tercera pregunta!")
-respuesta_3 = input("¿Cuál es la serpiente más grande el amazonas?\n ")
+respuesta_3 = input("¿Cuál es la serpiente más grande del amazonas?\n ")
 if respuesta_3.lower() == "anaconda verde" :
     print(f"✔️¡Excelente, bien dicho!")
     puntos = puntos + 33.3 # <--¡Sumamos otros 33.3 puntos aquí!
