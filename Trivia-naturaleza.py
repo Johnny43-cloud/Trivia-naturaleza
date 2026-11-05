@@ -78,7 +78,7 @@ else :
   
 #--- Pregunta 5 ---
 print(f"\n¡Última pregunta por los 100 puntos!")
-respuesta_5 = input("¿Cuál es el océano mas grande del mundo?\n")
+respuesta_5 = input("¿Cuál es el océano más grande del mundo?\n")
 if respuesta_5.lower() == "pacífico" or respuesta_5.lower() == "pacifico" :
     print(f"☑️¡Perfecto!, terminaste el examen")
     puntos = puntos + 33.3  
