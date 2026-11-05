@@ -19,7 +19,7 @@
 import window
 import builtins
 
-# Conectamos tus input() y print() con las ventanas flotantes del teléfono
+#Conectamos tus input() y print() con las ventanas flotantes del teléfono
 def web_input(prompt_text=""):
     return window.prompt(prompt_text)
 
@@ -30,7 +30,7 @@ def web_print(*args, **kwargs):
 builtins.input = web_input
 builtins.print = web_print
 
-# Ejecutamos tu archivo de Python sin tocarle nada
+#Ejecutamos tu archivo de Python sin tocarle nada
 try:
     exec(open("Trivia-naturaleza.py", encoding="utf-8").read())
 except Exception as e:
