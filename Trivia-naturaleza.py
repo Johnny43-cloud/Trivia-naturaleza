@@ -310,7 +310,7 @@ if respuesta_30.lower() == "fotosíntesis" or respuesta_30.lower() == "fotosinte
 else:
     print(f"✖️ ¡Fallaste en la última!, la respuesta era la fotosíntesis 🌿")
 
-#---Resultado Final---
+#--- Resultado Final ---
 print(f"\n=====================================")
 print(f"📝 ¡Examen terminado!")
 # Usamos int(round(puntos)) para que el puntaje final se muestre como un número entero limpio (1000)
