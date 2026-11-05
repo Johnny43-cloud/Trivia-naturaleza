@@ -315,5 +315,6 @@ print(f"\n=====================================")
 print(f"📝 ¡Examen terminado!")
 # Usamos int(round(puntos)) para que el puntaje final se muestre como un número entero limpio (1000)
 print(f"Tu calificación final es: {int(round(puntos))} / 1000 puntos")
-print(f"=====================================")
+print("=====================================")
+
 
