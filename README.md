@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="100%" alt="Image" src="https://github.com" />
-</p>
+<img width="1304" height="1304" alt="Image" src="https://github.com/user-attachments/assets/dd56f455-33bc-4f44-9b3c-99a848a36119" />
 
 # 🎮 Trivia - Naturaleza
 
