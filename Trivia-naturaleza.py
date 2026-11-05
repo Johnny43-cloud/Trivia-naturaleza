@@ -11,39 +11,6 @@ def descontar_vidas():
         print("💀 =================================== 💀")
         sys.exit()
 
-#Nombre = "Gabriel Alvarez "
-#Edad = "19"
-#print(f"¡hola, {Nombre} !")
-#print(f"🎉 ¡Felíz {Edad} años!,espero sigas cumpliendo muchos mas ")
-#El programa te hace preguntas 
-#Nombre = input("¿Como te llamas?")
-#Edad = input("¿Cuántos años tienes?")
-#Nombre = "Gabriel"
-#Edad = "19"
-#El programa te responde usando tus preguntas 
-#print(f"¡hola!,me llamo {Nombre} ")
-#print(f"voy a cumplir {Edad} años")
-#Primera conversación= Nombre 
-#Nombre = input("¿Cómo te llamas?")
-#Nombre = "Gabriel Alvarez "
-#print(f"¡Hola!, me llamo {Nombre} mucho gusto")
-#Segunda conversación = Edad 
-#Edad = input("¿cuántos años tienes?")
-#Edad = "19"
-#print(f"voy a cumplir {Edad} años este año")
-#El programa te oregunta tu nombre
-#Nombre = input("¿Cómo te llamas?")
-#Nombre = "Emilio"
-#print(f"¡Hola!,me llamo {Nombre} es un placer")
-# Te pregunta tu edad actual
-#Edad = input("¿Cuántos años tienes?")
-#Edad = 19
-#print(f"Actualmente tengo {Edad} años")
-#Cual seria tu edad el próximo año 
-#Edad_siguiente = input("¿Cuál seria tu edad el próximo año? ")
-#Convertirmos la edad en número y le sumamos +1 para el próximo año 
-#Edad_siguiente = int(Edad) +1
-#print(f" el próximo año tendre {Edad_siguiente} años")
 #python if/else mas .lower()
 #---Bienvenida al jugador---
 Nombre = input("¿Cómo te llamas?\n")
@@ -94,7 +61,7 @@ else :
     descontar_vidas()
   
 #--- Pregunta 5 ---
-print(f"\n¡Última pregunta por los 100 puntos!")
+print(f"\n¡Vamos con la quinta pregunta!")
 respuesta_5 = input("¿Cuál es el océano más grande del mundo?\n")
 if respuesta_5.lower() == "pacífico" or respuesta_5.lower() == "pacifico" :
     print(f"☑️¡Perfecto!, terminaste el examen")
