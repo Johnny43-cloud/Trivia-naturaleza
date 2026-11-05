@@ -1,10 +1,10 @@
 import sys #<-- (obligatorio para el game over)
 #creamos la funcion de vida al puro principio 
 vidas = 3
-def descontar_vida():
+def descontar_vidas():
     global vidas
     vidas -= 1
-    print(f"\n te quedan {vida} vidas. ")
+    print(f"\nte quedan {vidas} vida.")
     if vidas == 0:
         print("\n💀 =================================== 💀")
         print("💥 ¡GAME OVER! Has perdido tus 3 vidas. 💥")
@@ -60,7 +60,7 @@ if respuesta.lower() == "python" :
     puntos = puntos + 33.3 # <--¡Sumamos 33.3 puntos aquí!
 else :
     print(f"✖️ ¡Incorrecto!, el mejor lenguaje para empezar es python. ")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 2 ---
 print(f"\n¡Vamos con la segunda pregunta!") 
@@ -71,7 +71,7 @@ if respuesta_2.lower() == "amazonas" :
     puntos = puntos + 33.3 # <--¡Sumamos otros 33.3 puntos aquí!
 else :
     print(f"✖️ ¡Fallaste!, la respuesta corecta era el amazonas")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 3 ---
 print(f"\n ¡Vamos con la tercera pregunta!")
@@ -81,7 +81,7 @@ if respuesta_3.lower() == "anaconda verde" :
     puntos = puntos + 33.3 # <--¡Sumamos otros 33.3 puntos aquí!
 else :
     print(f"✖️¡Fallaste!, la respuesta correcta era anaconda 🐍")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 4 ---
 print(f"\n ¡Vamos con la cuarta pregunta!")
@@ -91,7 +91,7 @@ if respuesta_4.lower() == "italia" :
     puntos = puntos + 33.3 #<--¡Sumamos otros 33.3 puntos aquí!
 else :
     print(f"✖️¡Fallaste!, la respuesta correcta era italia")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 5 ---
 print(f"\n¡Última pregunta por los 100 puntos!")
@@ -101,7 +101,7 @@ if respuesta_5.lower() == "pacífico" or respuesta_5.lower() == "pacifico" :
     puntos = puntos + 33.3  
 else :
     print(f"✖️ ¡Fallaste!, la respuesta correcta era el pacifico")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 6 ---
 print(f"\n¡Vamos con la sexta pregunta!")
@@ -111,7 +111,7 @@ if respuesta_6.lower() == "guepardo" or respuesta_6.lower() == "chita":
     puntos = puntos + 33.33 
 else:
     print(f"✖️ ¡Fallaste!, era el guepardo o chita 🐆")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 7 ---
 print(f"\n¡Vamos con la séptima pregunta!")
@@ -121,7 +121,7 @@ if respuesta_7.lower() == "verde":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era verde 🍃")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 8 ---
 print(f"\n¡Vamos con la octava pregunta!")
@@ -131,7 +131,7 @@ if respuesta_8.lower() == "león" or respuesta_8.lower() == "leon":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Incorrecto!, la respuesta era el león 🦁")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 9 ---
 print(f"\n¡Vamos con la novena pregunta!")
@@ -141,7 +141,7 @@ if respuesta_9.lower() == "ballena azul" or respuesta_9.lower() == "ballena":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, era la ballena azul 🐋")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 10 ---
 print(f"\n¡Vamos con la décima pregunta!")
@@ -151,7 +151,7 @@ if respuesta_10.lower() == "abeja" or respuesta_10.lower() == "abejas":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era la abeja 🐝")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 11 ---
 print(f"\n¡Vamos con la pregunta 11!")
@@ -161,7 +161,7 @@ if respuesta_11.lower() == "luna":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era la luna 🌕")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 12 ---
 print(f"\n¡Vamos con la pregunta 12!")
@@ -171,7 +171,7 @@ if respuesta_12.lower() == "sol":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Incorrecto!, la respuesta correcta era el sol ☀️")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 13 ---
 print(f"\n¡Vamos con la pregunta 13!")
@@ -181,7 +181,7 @@ if respuesta_13.lower() == "cóndor" or respuesta_13.lower() == "condor":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el cóndor 🦅")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 14 ---
 print(f"\n¡Vamos con la pregunta 14!")
@@ -191,7 +191,7 @@ if respuesta_14.lower() == "agua":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta correcta era el agua 💧")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 15 ---
 print(f"\n¡Vamos con la pregunta 15!")
@@ -201,7 +201,7 @@ if respuesta_15.lower() == "cactus":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el cactus 🌵")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 16 ---
 print(f"\n¡Vamos con la pregunta 16!")
@@ -211,7 +211,7 @@ if respuesta_16.lower() == "oxígeno" or respuesta_16.lower() == "oxigeno":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Incorrecto!, respiramos oxígeno 💨")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 17 ---
 print(f"\n¡Vamos con la pregunta 17!")
@@ -221,7 +221,7 @@ if respuesta_17.lower() == "elefante":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el elefante 🐘")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 18 ---
 print(f"\n¡Vamos con la pregunta 18!")
@@ -231,7 +231,7 @@ if respuesta_18.lower() == "amazonas" or respuesta_18.lower() == "selva amazóni
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el amazonas 🌳")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 19 ---
 print(f"\n¡Vamos con la pregunta 19!")
@@ -241,7 +241,7 @@ if respuesta_19.lower() == "pulpo":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el pulpo 🐙")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 20 ---
 print(f"\n¡Vamos con la pregunta 20!")
@@ -251,7 +251,7 @@ if respuesta_20.lower() == "arcoíris" or respuesta_20.lower() == "arcoiris":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el arcoíris 🌈")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 21 ---
 print(f"\n¡Vamos con la pregunta 21!")
@@ -261,7 +261,7 @@ if respuesta_21.lower() == "ave" or respuesta_21.lower() == "aves" or respuesta_
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, las aves son sus parientes más cercanos 🐔")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 22 ---
 print(f"\n¡Vamos con la pregunta 22!")
@@ -271,7 +271,7 @@ if respuesta_22.lower() == "invierno":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el invierno ❄️")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 23 ---
 print(f"\n¡Vamos con la pregunta 23!")
@@ -281,7 +281,7 @@ if respuesta_23.lower() == "sahara" or respuesta_23.lower() == "el sahara" :
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta correcta es el sahara 🏜️")
-    descontar_vida()
+    descontar_vidas()
   
 #--- Pregunta 24 ---
 print(f"\n¡Vamos con la pregunta 24!")
@@ -291,7 +291,7 @@ if respuesta_24.lower() == "tortuga" or respuesta_24.lower() == "tortuga marina"
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era la tortuga 🐢")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 25 ---
 print(f"\n¡Vamos con la pregunta 25!")
@@ -301,7 +301,7 @@ if respuesta_25.lower() == "lava" or respuesta_25.lower() == "magma":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era lava 🌋")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 26 ---
 print(f"\n¡Vamos con la pregunta 26!")
@@ -311,7 +311,7 @@ if respuesta_26.lower() == "camaleón" or respuesta_26.lower() == "camaleon":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, era el camaleón 🦎")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 27 ---
 print(f"\n¡Vamos con la pregunta 27!")
@@ -321,7 +321,7 @@ if respuesta_27.lower() == "antártida" or respuesta_27.lower() == "antartida":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era la Antártida 🏔️")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 28 ---
 print(f"\n¡Vamos con la pregunta 28!")
@@ -331,7 +331,7 @@ if respuesta_28.lower() == "atacama" or respuesta_28.lower() == "desierto de ata
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era Atacama 🏜️")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 29 ---
 print(f"\n¡Vamos con la pregunta 29!")
@@ -341,7 +341,7 @@ if respuesta_29.lower() == "delfín" or respuesta_29.lower() == "delfin":
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste!, la respuesta era el delfín 🐬")
-    descontar_vida()
+    descontar_vidas()
 
 #--- Pregunta 30 ---
 print(f"\n¡Última pregunta por la puntuación perfecta!")
@@ -351,7 +351,7 @@ if respuesta_30.lower() == "fotosíntesis" or respuesta_30.lower() == "fotosinte
     puntos = puntos + 33.33
 else:
     print(f"✖️ ¡Fallaste en la última!, la respuesta era la fotosíntesis 🌿")
-    descontar_vida()
+    descontar_vidas()
 
 #---Resultado Final---
 print(f"\n=====================================")
