@@ -23,7 +23,6 @@ from js import window, document
 buffer = []
 
 def web_print(*args, sep=" ", end="\n", **kwargs):
-    # Guarda los textos y los muestra juntos con la siguiente pregunta
     buffer.append(sep.join(str(a) for a in args) + end)
 
 def web_input(prompt_text=""):
@@ -41,6 +40,8 @@ try:
     with open("Trivia-naturaleza.py", "r", encoding="utf-8") as f:
         codigo = f.read()
     exec(compile(codigo, "Trivia-naturaleza.py", "exec"), {"__name__": "__main__"})
+except SystemExit:
+    pass  # es el sys.exit() de tu GAME OVER, es normal
 except Exception as e:
     window.alert(f"Error en el examen: {e}")
 finally:
