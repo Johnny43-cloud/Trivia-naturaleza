@@ -1,89 +1,73 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia Naturaleza 🧠</title>
-    <script type="text/javascript" src="https://jsdelivr.net"></script>
-    <script type="text/javascript" src="https://jsdelivr.net"></script>
-</head>
-<body onload="brython()" style="background-color: #121212; color: #ffffff; font-family: sans-serif; padding: 20px; text-align: center;">
-
-    <h2 style="color: #4CAF50;">🌿 BIENVENIDO A MI TRIVIA DE NATURALEZA 🧠</h2>
-    <p>Proyecto de Examen - Día 3 Autodidacta</p>
-    <p style="color: #888; font-size: 14px;">¡Prepárate! El juego iniciará en una ventana emergente.</p>
-    <hr style="border: 1px solid #333; width: 80%;">
-
-    <script type="text/python">
-from browser import window, alert, prompt
-import sys
-
-# Redirección directa para que el teléfono responda al instante
-builtins.input = prompt
-builtins.print = alert
-
-# ==========================================
-# TU CÓDIGO DE PYTHON EMPIEZA AQUÍ
-# ==========================================
-
+import sys #<-- (obligatorio para el game over)
+#creamos la funcion de vida al puro principio 
 vidas = 3
 def descontar_vidas():
     global vidas
     vidas -= 1
-    print(f"Te quedan {vidas} vidas.")
+    print(f"\nte quedan {vidas} vida.")
     if vidas == 0:
-        print("💀 =================================== 💀\n💥 ¡GAME OVER! Has perdido tus 3 vidas. 💥\n💀 =================================== 💀")
+        print("\n💀 =================================== 💀")
+        print("💥 ¡GAME OVER! Has perdido tus 3 vidas. 💥")
+        print("💀 =================================== 💀")
         sys.exit()
 
+#python if/else mas .lower()
+#---Bienvenida al jugador---
 Nombre = input("¿Cómo te llamas?\n")
-if Nombre:
-    print(f"¡Hola, Bienvenido {Nombre} a tu examen de trivia!\n¡Prepárate, vamos a empezar!")
-
+print(f"\n ¡Hola, Bienvenido {Nombre} a tu exmanen de trivia!")
+print(f" ¡Prepárate,vamos a empezar!\n ")
+#---SISTEMA DE CALIFICACION---
+#Empezamos el examen con 0 puntos 
 puntos = 0
 
-# --- Pregunta 1 ---
+#--- Pregunta 1 ---
 respuesta = input("¿Cuál es el mejor lenguaje para empezar a programar?")
-if respuesta and respuesta.lower() == "python":
-    print("☑️ ¡Excelente!, ¡bien hecho! ☑️")
-    puntos += 33.3
-else:
-    print("✖️ ¡Incorrecto!, el mejor lenguaje para empezar es python.")
+if respuesta.lower() == "python" :
+    print(f"☑️ ¡Excelente!, ¡bien hecho! ☑️")
+    puntos = puntos + 33.3 # <--¡Sumamos 33.3 puntos aquí!
+else :
+    print(f"✖️ ¡Incorrecto!, el mejor lenguaje para empezar es python. ")
     descontar_vidas()
   
-# --- Pregunta 2 ---
-respuesta_2 = input("¿Cuál es el río más largo del mundo?")                                                      
-if respuesta_2 and respuesta_2.lower() == "amazonas":
-    print("✔️ ¡Excelente! , ¡Sigue así!")
-    puntos += 33.3
-else:
-    print("✖️ ¡Fallaste!, la respuesta correcta era el amazonas")
+#--- Pregunta 2 ---
+print(f"\n¡Vamos con la segunda pregunta!") 
+respuesta_2 = input("¿cuál es el río más largo del mundo?\n")                                                      
+#Convertimos la respuesta a minúsculas para evitar errores
+if respuesta_2.lower() == "amazonas" :
+    print(f"✔️ ¡Excelente! , ¡Sigue asi !")
+    puntos = puntos + 33.3 # <--¡Sumamos otros 33.3 puntos aquí!
+else :
+    print(f"✖️ ¡Fallaste!, la respuesta corecta era el amazonas")
     descontar_vidas()
   
-# --- Pregunta 3 ---
-respuesta_3 = input("¿Cuál es la serpiente más grande del amazonas?")
-if respuesta_3 and respuesta_3.lower() == "anaconda verde":
-    print("✔️¡Excelente, bien dicho!")
-    puntos += 33.3
-else:
-    print("✖️¡Fallaste!, la respuesta correcta era anaconda 🐍")
+#--- Pregunta 3 ---
+print(f"\n ¡Vamos con la tercera pregunta!")
+respuesta_3 = input("¿Cuál es la serpiente más grande del amazonas?\n ")
+if respuesta_3.lower() == "anaconda verde" :
+    print(f"✔️¡Excelente, bien dicho!")
+    puntos = puntos + 33.3 # <--¡Sumamos otros 33.3 puntos aquí!
+else :
+    print(f"✖️¡Fallaste!, la respuesta correcta era anaconda 🐍")
     descontar_vidas()
   
-# --- Pregunta 4 ---
-respuesta_4 = input("¿Qué país tiene forma de bota en europa?")
-if respuesta_4 and respuesta_4.lower() == "italia":
-    print("¡Excelente!, ¡Vas con todo!🇮🇹")
-    puntos += 33.3
-else:
-    print("✖️¡Fallaste!, la respuesta correcta era italia")
+#--- Pregunta 4 ---
+print(f"\n ¡Vamos con la cuarta pregunta!")
+respuesta_4 = input("¿Qué país tiene forma de bota en europa?\n ")
+if respuesta_4.lower() == "italia" :
+    print(f"¡Excelente!, ¡Vas con todo!🇮🇹")
+    puntos = puntos + 33.3 #<--¡Sumamos otros 33.3 puntos aquí!
+else :
+    print(f"✖️¡Fallaste!, la respuesta correcta era italia")
     descontar_vidas()
   
-# --- Pregunta 5 ---
-respuesta_5 = input("¿Cuál es el océano más grande del mundo?")
-if respuesta_5 and (respuesta_5.lower() == "pacífico" or respuesta_5.lower() == "pacifico"):
-    print("☑️¡Perfecto!, terminaste la primera sección")
-    puntos += 33.3  
-else:
-    print("✖️ ¡Fallaste!, la respuesta correcta era el pacifico")
+#--- Pregunta 5 ---
+print(f"\n¡Vamos con la quinta pregunta!")
+respuesta_5 = input("¿Cuál es el océano más grande del mundo?\n")
+if respuesta_5.lower() == "pacífico" or respuesta_5.lower() == "pacifico" :
+    print(f"☑️¡Perfecto!, terminaste el examen")
+    puntos = puntos + 33.3  
+else :
+    print(f"✖️ ¡Fallaste!, la respuesta correcta era el pacifico")
     descontar_vidas()
   
 #--- Pregunta 6 ---
@@ -342,7 +326,3 @@ print(f"📝 ¡Examen terminado!")
 # Usamos int(round(puntos)) para que el puntaje final se muestre como un número entero limpio (1000)
 print(f"Tu calificación final es: {int(round(puntos))} / 1000 puntos")
 print(f"=====================================")
-
-    </script>
-</body>
-</html>
