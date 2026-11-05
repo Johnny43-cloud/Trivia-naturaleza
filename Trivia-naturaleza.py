@@ -14,7 +14,7 @@ def descontar_vidas():
 #python if/else mas .lower()
 #---Bienvenida al jugador---
 Nombre = input("¿Cómo te llamas?\n")
-print(f"\n ¡Hola, Bienvenido {Nombre} a tu exmanen de trivia!")
+print(f"\n ¡Hola, Bienvenido {Nombre} a tu examen de trivia!")
 print(f" ¡Prepárate,vamos a empezar!\n ")
 #---SISTEMA DE CALIFICACION---
 #Empezamos el examen con 0 puntos 
